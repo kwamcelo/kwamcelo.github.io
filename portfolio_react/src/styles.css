@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 :root {
-    --base-color: #f9f3df;
-    --text-color: #000000;
-    --primary-color: #ff866e;
-    --secondary-color: #8D8DFF;
-    --color-1: #fff7de;
+    --base-color: #95d5b2;
+    --text-color: #081c15;
+    --primary-color: #2d6a4f;
+    --secondary-color: #52b788;
+    --color-1: #d8f3dc;
     --color-2: #f3f7f9;
     --color-3: #f6f3f9;
 
@@ -32,6 +32,7 @@ body {
 h1, h2, h3 {
     text-align: center;
     font-family: Dela Gothic One;
+    color: var(--text-color);
 }
 
 nav {
@@ -69,6 +70,17 @@ header, section {
     border-radius: 1em;
 }
 
+header img {
+    max-width: 100%;
+    border-radius: 1em;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+h1 {
+    font-size: 2.0rem;
+}
+
 .flex-container {
     display: flex;
     justify-content: center;
@@ -77,29 +89,42 @@ header, section {
     gap: 3em;
 }
 
-header img {
-    max-width: 100%;
-    border-radius: 1em;
-    object-fit: cover;
-    object-position: bottom;
-}
-
 .text-container {
-    flex: 0 1 34em;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: stretch;
+    gap: 2em;
+    text-align: left;
 }
 
-h1 {
-    font-size: 2.5rem;
+.school-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 0.25rem;
+    text-align: left;
 }
 
 .text-container p {
     margin: .75em 0 1em 0;
     font-size: 1.25rem;
 }
+
+.intro-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro-details h1 {
+    margin-top: 0;
+}
+
+
 .cta-button {
     display: inline-block;
     text-decoration: none;
-    color: white;
+    color: var(--secondary-color);
     background-color: var(--primary-color);
     padding: .75em 1.25em;
     border-radius: .5em;
