@@ -23,28 +23,67 @@ export const papers = [
 export const projects = [
     {
         title: 'Insight UBC',
-        description: 'Full-stack TypeScript/Express web app that ingests UBC course and facilities datasets, stores normalized records, and provides an interactive frontend for searching, filtering, and visualizing academic and campus-space data. I built REST APIs for dataset uploads, async processing, CRUD operations, custom query execution, and frontend dashboards with sortable tables and Chart.js insights.',
-        images: '/images/insight_ubc/'
+        summary: [
+            'Built a full-stack TypeScript and Express app for uploading and processing UBC course and campus facilities datasets.',
+            'Designed REST APIs for dataset uploads, async processing, CRUD operations, and custom query execution.',
+            'Created frontend dashboards with sortable tables and Chart.js visualizations for exploring academic and campus-space data.'
+        ],
+        images: [
+            '/images/insight_ubc/upload_zip.png',
+            '/images/insight_ubc/courses_uploaded.png',
+            '/images/insight_ubc/course_insights.png'
+        ]
     },
     {
         title: 'EZBooks',
-        description: 'A full-stack smart receipt management app for small business owners that turns uploaded receipt images and PDFs into organized, accountant-ready expense records. Built with Flask, SQLAlchemy, SQLite, Tesseract OCR, and vanilla JavaScript, it supports batch uploads, OCR-based extraction of vendor, date, amount, tax, and card details, automatic categorization through vendor defaults, keyword rules, and fuzzy matching, job/project expense tracking, inline receipt editing, batch approval, and CSV/PDF exports. The project demonstrates backend API design, file processing, OCR integration, database modeling, automation of manual bookkeeping workflows, and a responsive dashboard for reviewing and managing expenses.',
-        images: '/images/ezbooks/'
+        summary: [
+            'Built a full-stack receipt management app that turns uploaded receipt images and PDFs into organized expense records.',
+            'Implemented OCR extraction for vendor, date, amount, tax, and card details using Flask, SQLAlchemy, SQLite, and Tesseract.',
+            'Added categorization, job tracking, inline editing, batch approval, and CSV/PDF exports for accountant-ready workflows.'
+        ],
+        images: [
+            '/images/ezbooks/homepage.png',
+            '/images/ezbooks/ezbooksdashboard.png'
+        ]
     },
     {
         title: 'Pointer Realms',
-        description: 'A 3D educational programming game that teaches C memory concepts through interactive gameplay. Players solve levels by manipulating characters and objects on a grid, with each successful action corresponding to a real line of C code. Built with React, TypeScript, Vite, and Three.js, the app visualizes variables, pointers, arrays, dereferencing, and heap-style memory operations as game mechanics, powered by a custom game-state engine that tracks world state, validates actions, advances line-by-line execution, and supports generated level data from C snippets.',
-        images: '/images/pointer_realms/'
+        summary: [
+            'Built a 3D educational programming game that teaches C memory concepts through interactive grid-based puzzles.',
+            'Used React, TypeScript, Vite, and Three.js to visualize variables, pointers, arrays, dereferencing, and heap-style memory operations.',
+            'Created a custom game-state engine that validates actions, advances code line by line, and supports generated levels from C snippets.'
+        ],
+        images: [
+            '/images/pointer_realms/different_variable_types.png',
+            '/images/pointer_realms/incremented_integer.png',
+            '/images/pointer_realms/assigning_a_pointer.png'
+        ]
     },
     {
         title: 'Contextify',
-        description: 'A Gemini-powered Chrome extension built to help language learners stay immersed while reading online. Instead of stopping to look up unfamiliar words, write notes, or make flashcards, users can highlight text on any webpage and instantly receive a context-aware definition, explanation, and example sentence. Unlike traditional dictionary tools that often miss how a word is being used, Contextify uses the surrounding sentence and paragraph to generate feedback that fits the actual reading context. Built with JavaScript, Chrome Extension APIs, local storage, and Google Gemini, the project helps learners spend less time “studying English” in isolation and more time actively using and understanding it.',
-        images: '/images/contextify/'
+        summary: [
+            'Built a Gemini-powered Chrome extension that gives language learners context-aware explanations for highlighted text.',
+            'Used surrounding page context to generate definitions, explanations, and example sentences that match the actual reading situation.',
+            'Implemented the extension with JavaScript, Chrome Extension APIs, local storage, and Google Gemini.'
+        ],
+        images: [
+            '/images/contextify/find_defition.gif',
+            '/images/contextify/view_history.gif',
+            '/images/contextify/deleting_history.gif'
+        ]
     },
     {
         title: 'b.shell',
-        description: 'A mobile-friendly French conjugation practice app built for quick study sessions on phones. It combines flashcard-style quizzes, difficulty levels, progress tracking, and review modes to help learners practice verbs efficiently wherever they are.',
-        images: '/images/b.shell/'
+        summary: [
+            'Built a mobile-friendly French conjugation practice app for quick study sessions on phones.',
+            'Added flashcard-style quizzes, difficulty levels, progress tracking, and review modes.',
+            'Designed the app for efficient verb practice that works well in short sessions.'
+        ],
+        images: [
+            '/images/b.shell/home_page.PNG',
+            '/images/b.shell/game_play.PNG',
+            '/images/b.shell/results.PNG'
+        ]
     },
     
 
