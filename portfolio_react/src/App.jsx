@@ -20,20 +20,27 @@ function App() {
 
   return (
     <>
-        <header>
-            <Nav />
-            <div className="flex-container">
-                {path === '#/research' ? (
+        <div className="top-scroll-mask" aria-hidden="true" />
+        <Nav />
+        <main className="page-content">
+            {path === '#/research' ? (
+                <section className="page-section">
                     <Research />
-                ) : (
-                    <>
+                </section>
+            ) : (
+                <>
+                    <section className="page-section">
                         <ProfileIntro />
+                    </section>
+                    <section className="page-section">
                         <AboutMe />
+                    </section>
+                    <section className="page-section">
                         <Projects />
-                    </>
-                )}
-            </div>
-        </header>
+                    </section>
+                </>
+            )}
+        </main>
     </>
   );
 }

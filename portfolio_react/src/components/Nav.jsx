@@ -1,3 +1,5 @@
+import { useEffect, useState } from 'react'
+
 const navLinks = [
     { href: '#/', label: 'Home' },
     { href: '#/research', label: 'Research' },
@@ -14,9 +16,38 @@ const navLinks = [
 
 export default function Nav() {
     const currentPath = window.location.hash || '#/';
+    const [isOverSection, setIsOverSection] = useState(false);
+
+    useEffect(() => {
+        const updateNavOverlap = () => {
+            const nav = document.querySelector('nav');
+            const sections = document.querySelectorAll('.page-section');
+
+            if (!nav) {
+                return;
+            }
+
+            const navRect = nav.getBoundingClientRect();
+            const hasOverlap = Array.from(sections).some((section) => {
+                const sectionRect = section.getBoundingClientRect();
+                return sectionRect.top <= navRect.bottom && sectionRect.bottom >= navRect.bottom;
+            });
+
+            setIsOverSection(hasOverlap);
+        };
+
+        updateNavOverlap();
+        window.addEventListener('scroll', updateNavOverlap);
+        window.addEventListener('resize', updateNavOverlap);
+
+        return () => {
+            window.removeEventListener('scroll', updateNavOverlap);
+            window.removeEventListener('resize', updateNavOverlap);
+        };
+    }, [currentPath]);
 
     return (
-        <nav>
+        <nav className={isOverSection ? 'nav-over-section' : undefined}>
             <ul>
                 {navLinks.map((link) => (
                     <li key={link.href}>
