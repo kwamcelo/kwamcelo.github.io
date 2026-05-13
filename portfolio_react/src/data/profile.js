@@ -20,6 +20,10 @@ export const papers = [
   },
 ];
 
+export const aboutMe = [
+
+]
+
 export const projects = [
     {
         title: 'Insight UBC',
@@ -35,7 +39,7 @@ export const projects = [
         ]
     },
     {
-        title: 'EZBooks',
+        title: 'EZBooks (UBC Biztech KickStart 2025)',
         summary: [
             'Built a full-stack receipt management app that turns uploaded receipt images and PDFs into organized expense records.',
             'Implemented OCR extraction for vendor, date, amount, tax, and card details using Flask, SQLAlchemy, SQLite, and Tesseract.',
@@ -47,7 +51,7 @@ export const projects = [
         ]
     },
     {
-        title: 'Pointer Realms',
+        title: 'Pointer Realms (DubHacks 2025)',
         summary: [
             'Built a 3D educational programming game that teaches C memory concepts through interactive grid-based puzzles.',
             'Used React, TypeScript, Vite, and Three.js to visualize variables, pointers, arrays, dereferencing, and heap-style memory operations.',
@@ -60,7 +64,7 @@ export const projects = [
         ]
     },
     {
-        title: 'Contextify',
+        title: 'Contextify (StormHacks 2025)',
         summary: [
             'Built a Gemini-powered Chrome extension that gives language learners context-aware explanations for highlighted text.',
             'Used surrounding page context to generate definitions, explanations, and example sentences that match the actual reading situation.',
@@ -73,7 +77,7 @@ export const projects = [
         ]
     },
     {
-        title: 'b.shell',
+        title: 'b.shell (BCS Hacks 2025)',
         summary: [
             'Built a mobile-friendly French conjugation practice app for quick study sessions on phones.',
             'Added flashcard-style quizzes, difficulty levels, progress tracking, and review modes.',
@@ -85,6 +89,24 @@ export const projects = [
             '/images/b.shell/results.PNG'
         ]
     },
+];
+
+export const research = [
+    {
+        title: 'Main Group Chemistry - Rivard Group',
+        image: '/images/research_group/rivard2019-christmas.jpg',
+        paperTitle: 'Metastable Germanium Polymers',
+        paper: 'https://pubs.rsc.org/en/content/articlelanding/2021/dt/d1dt02850b',
+        description: 'Conducted glovebox chemistry to synthesize germanium coated silica sufraces and the effect of different alkoxide and N-Heterolytic Carbenes on the synthesis of germanium dihydride and germanium polymers.'
+    },
+    {
+        title: 'Computational Chemistry - Brown Group',
+        image: '/images/research_group/brown2017.png',
+        paperTitle: 'Genetically Encoded Wittig Reaction Substrates',
+        paper: 'https://pubmed.ncbi.nlm.nih.gov/34760216/',
+        description: 'NSERC USRA recipient summer 2018 and 2019. Used Gaussian to perform a variety of quantum computations: Examining thermodynamics of potential reaction pathways, calculating strucural and spectral properties of emissive RNA analogues, simulating transition states of peptides for Wittig reactions.'
     
+    },
+
 
 ]
