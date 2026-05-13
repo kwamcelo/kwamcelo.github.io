@@ -1,5 +1,6 @@
 import Nav from './components/Nav.jsx'
 import ProfileIntro from './components/ProfileIntro.jsx'
+import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
 import Research from './components/Research.jsx'
 import './styles.css'
@@ -17,6 +18,7 @@ function App() {
                 ) : (
                     <>
                         <ProfileIntro />
+                        <AboutMe />
                         <Projects />
                     </>
                 )}
