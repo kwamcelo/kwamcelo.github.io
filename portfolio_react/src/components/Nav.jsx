@@ -1,6 +1,6 @@
 const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/research', label: 'Research' },
+    { href: '#/', label: 'Home' },
+    { href: '#/research', label: 'Research' },
     { href: 'https://www.instagram.com/bornonsat/', label: '@bornonsat' },
     {
         href: 'https://www.linkedin.com/in/kwami-aku-dominguez-7018a028b/?originalSubdomain=ca',
@@ -13,7 +13,7 @@ const navLinks = [
 ];
 
 export default function Nav() {
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.hash || '#/';
 
     return (
         <nav>

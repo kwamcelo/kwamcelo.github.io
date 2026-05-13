@@ -97,7 +97,7 @@ export const research = [
         image: '/images/research_group/rivard2019-christmas.jpg',
         paperTitle: 'Metastable Germanium Polymers',
         paper: 'https://pubs.rsc.org/en/content/articlelanding/2021/dt/d1dt02850b',
-        description: 'Conducted glovebox chemistry to synthesize germanium coated silica sufraces and the effect of different alkoxide and N-Heterolytic Carbenes on the synthesis of germanium dihydride and germanium polymers.'
+        description: 'Conducted inert chemistry research into the synthesis of germanium coated silica sufraces and the effect of different alkoxide and N-Heterolytic Carbenes on the synthesis of germanium dihydride and germanium polymers.'
     },
     {
         title: 'Computational Chemistry - Brown Group',
