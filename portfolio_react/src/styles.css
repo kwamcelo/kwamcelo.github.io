@@ -257,13 +257,6 @@ h1 {
   line-height: 1.5;
 }
 
-@media (max-width: 700px) {
-  .research-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-
 .cta-button {
     display: inline-block;
     text-decoration: none;
@@ -285,4 +278,145 @@ h1 {
 .cta-button:focus-visible {
     outline: 3px solid var(--text-color);
     outline-offset: 3px;
+}
+
+@media (max-width: 800px) {
+    body {
+        padding: 0.75em;
+        padding-top: 10em;
+    }
+
+    nav {
+        width: 100%;
+        padding: 0.75em 1em;
+    }
+
+    nav ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 0.75em 1em;
+    }
+
+    nav li:first-child {
+        margin-right: 0;
+    }
+
+    nav img {
+        width: 56px;
+        height: 56px;
+    }
+
+    header {
+        width: 100%;
+        padding: 1.25em;
+    }
+
+    h1 {
+        font-size: 1.65rem;
+    }
+
+    .flex-container {
+        gap: 2em;
+    }
+
+    .text-container {
+        grid-template-columns: 1fr;
+        gap: 1.25em;
+        text-align: center;
+    }
+
+    .text-container > img {
+        justify-self: center;
+    }
+
+    .intro-details {
+        gap: 1em;
+    }
+
+    .intro-details h1 {
+        text-align: center;
+    }
+
+    .school-info {
+        grid-template-columns: 64px 1fr;
+        gap: 0.75em;
+        text-align: left;
+    }
+
+    .school-info img {
+        width: 64px;
+        height: auto;
+        justify-self: center;
+    }
+
+    .text-container p,
+    .about-container p {
+        font-size: 1rem;
+        line-height: 1.55;
+    }
+
+    .project-text {
+        grid-template-columns: 1fr;
+        gap: 0.75em;
+    }
+
+    .project-text h4,
+    .research-card h4 {
+        font-size: 1.3rem;
+    }
+
+    .project-images {
+        grid-template-columns: 1fr;
+    }
+
+    .research-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .research-paper {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .research-logo {
+        width: min(220px, 100%);
+        height: auto;
+    }
+
+    .cta-button {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+}
+
+@media (max-width: 420px) {
+    body {
+        padding-top: 12em;
+    }
+
+    nav ul {
+        gap: 0.6em;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+    }
+
+    nav img {
+        width: 48px;
+        height: 48px;
+    }
+
+    header {
+        padding: 1em;
+    }
+
+    .school-info {
+        grid-template-columns: 52px 1fr;
+    }
+
+    .school-info img {
+        width: 52px;
+    }
 }
