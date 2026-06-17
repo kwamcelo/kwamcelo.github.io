@@ -3,10 +3,8 @@ export default function AboutMe() {
         <div className="about-container">
             <h3>About Me</h3>
             <p>
-                I chose to go back to school for an after degree in Computer Science because I felt how rapidly the world was changing in the technological space and really wanted to understand that world better and become a part of it. 
-                I have always leaned more into the quantitative/logical side of things, so the transition from computational chemistry to pure computer science felt natural. 
-                I grew up a huge fan of movies/TV and anime, so I am personally excited about learning applications of 2D/3D animation as I continue down this path. 
-                Now that I am learning more about the field, I am professionally interested in machine learning and UX/UI. I want to be part of impactful projects that are centred around making people's lives easier, and using emerging technology like machine learning to that end.
+                During my first Bachelor’s, I conducted research in inorganic and computational chemistry, and while at the time chemistry was what had my attention, I was always curious about the python scripts the senior students wrote to extract information from our gigantic computational output files. My curiosity into the world of technology has only grown since then, and I decided to go back to school so that I could immerse myself in computer science and learn as much as possible.
+                Now that I am at UBC, I have attended hackathons, been to talks and workshops about AI and machine learning, and started building my own personal projects. I’ve really enjoyed learning about computer networking, computer graphics, and software construction, but a stand out course for me was Human-Computer Interactions (HCI). It was the first course I took where we learned to apply all of our skills as software developers to solve client’s problems. Full-stack development is interesting to me in a similar way, it's an opportunity to work on a project from end-to-end and really have an impact on people’s lives and collaborate with them as you build. Transitioning from the physical sciences to computer science has been a humbling journey, and as I start to feel the pieces starting to click together more, I am excited about what I will contribute to in the future.
             </p>
         </div>
     )
