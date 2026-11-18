@@ -1,4 +1,5 @@
-import { schools } from '../data/profile.js'
+import { contact, schools } from '../data/profile.js'
+import ButtonLink from './ButtonLink.jsx'
 
 export default function ProfileIntro() {
     return (
@@ -9,23 +10,23 @@ export default function ProfileIntro() {
                 <h1>Kwami Aku-Dominguez</h1>
 
                 <div className="school-info">
-                    <img height="120" width="100" src={schools[0].image} />
-                    <p>
-                        Bachelor of Computer Science: <strong><i>in progress</i></strong>
-                    </p>
+                    {schools.map((school) => (
+                        <div className="school-row" key={school.name}>
+                            <img width="100" src={school.image} alt={`${school.name} logo`} />
+                            <p>
+                                {school.degree}, {school.name}: <strong>{school.status}</strong>
+                            </p>
+                        </div>
+                    ))}
+                </div>
 
-                    <img height="150" width="100" src={schools[1].image} />
-                    <p>
-                        Bachelor of Science with Honours in Chemistry: <strong>Completed 2021</strong>
-                    </p>
-
+                <div className="contact-links">
+                    <ButtonLink href={`mailto:${contact.email}`}>Email me</ButtonLink>
+                    {contact.resume && <ButtonLink href={contact.resume}>Resume (PDF)</ButtonLink>}
+                    <ButtonLink href={contact.linkedin}>LinkedIn</ButtonLink>
+                    <ButtonLink href={contact.github}>GitHub</ButtonLink>
                 </div>
             </div>
-            
         </div>
-
-        
-
-
     )
 }

@@ -3,6 +3,8 @@ import Nav from './components/Nav.jsx'
 import ProfileIntro from './components/ProfileIntro.jsx'
 import AboutMe from './components/AboutMe.jsx'
 import Projects from './components/Projects.jsx'
+import Experience from './components/Experience.jsx'
+import Skills from './components/Skills.jsx'
 import Research from './components/Research.jsx'
 import './styles.css'
 
@@ -37,6 +39,12 @@ function App() {
                     </section>
                     <section className="page-section">
                         <Projects />
+                    </section>
+                    <section className="page-section">
+                        <Experience />
+                    </section>
+                    <section className="page-section">
+                        <Skills />
                     </section>
                 </>
             )}

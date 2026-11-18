@@ -1,18 +1,17 @@
 import { useEffect, useState } from 'react'
+import { contact } from '../data/profile.js'
 
 const navLinks = [
     { href: '#/', label: 'Home' },
     { href: '#/research', label: 'Research' },
+    ...(contact.resume ? [{ href: contact.resume, label: 'Resume' }] : []),
+    // TODO: decide whether to keep your personal Instagram in the nav of a recruiter-facing site.
     { href: 'https://www.instagram.com/bornonsat/', label: '@bornonsat' },
-    {
-        href: 'https://www.linkedin.com/in/kwami-aku-dominguez-7018a028b/?originalSubdomain=ca',
-        label: 'LinkedIn',
-    },
-    {
-        href: 'https://github.com/kwamcelo',
-        label: 'GitHub'
-    }
+    { href: contact.linkedin, label: 'LinkedIn' },
+    { href: contact.github, label: 'GitHub' },
 ];
+
+const isExternal = (href) => !href.startsWith('#');
 
 export default function Nav() {
     const currentPath = window.location.hash || '#/';
@@ -54,17 +53,20 @@ export default function Nav() {
                         <a
                             href={link.href}
                             className={currentPath === link.href ? 'active-nav-link' : undefined}
+                            {...(isExternal(link.href) && { target: '_blank', rel: 'noopener noreferrer' })}
                         >
                             {link.label}
                         </a>
                     </li>
                 ))}
-                <img
-                  height="100"
-                  width="100"
-                  src="/images/pinkSankofa1.png"
-                  alt=""
-                />
+                <li aria-hidden="true">
+                    <img
+                      height="100"
+                      width="100"
+                      src="/images/pinkSankofa1.png"
+                      alt=""
+                    />
+                </li>
             </ul>
         </nav>
     );

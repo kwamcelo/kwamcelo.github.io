@@ -153,11 +153,23 @@ h1 {
 }
 
 .school-info {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-    gap: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
     text-align: left;
+}
+
+.school-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75em;
 }
 
 .text-container p {
@@ -236,6 +248,85 @@ h1 {
   width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.project-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.project-tech {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--primary-color);
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.project-links .cta-button {
+  padding: .4em .9em;
+  font-size: 0.9rem;
+}
+
+.experience-container,
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  text-align: left;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.25em 1em;
+  margin-bottom: 0.5em;
+}
+
+.experience-header h4 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.experience-org {
+  font-weight: normal;
+}
+
+.experience-dates {
+  font-size: 0.95rem;
+  color: var(--primary-color);
+}
+
+.experience-item ul {
+  padding-left: 1.2em;
+  line-height: 1.5;
+}
+
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.skills-group {
+  display: grid;
+  grid-template-columns: 12em 1fr;
+  gap: 1em;
+}
+
+.skills-group dt {
+  font-family: Dela Gothic One;
+}
+
+.skills-group dd {
+  line-height: 1.5;
 }
 
 .research-container {
@@ -385,13 +476,16 @@ h1 {
         text-align: center;
     }
 
-    .school-info {
+    .school-row {
         grid-template-columns: 64px 1fr;
         gap: 0.75em;
-        text-align: left;
     }
 
-    .school-info img {
+    .contact-links {
+        justify-content: center;
+    }
+
+    .school-row img {
         width: 64px;
         height: auto;
         justify-self: center;
@@ -419,6 +513,11 @@ h1 {
 
     .research-grid {
         grid-template-columns: 1fr;
+    }
+
+    .skills-group {
+        grid-template-columns: 1fr;
+        gap: 0.25em;
     }
 
     .research-paper {
@@ -474,11 +573,11 @@ h1 {
         padding: 1em;
     }
 
-    .school-info {
+    .school-row {
         grid-template-columns: 52px 1fr;
     }
 
-    .school-info img {
+    .school-row img {
         width: 52px;
     }
 }
