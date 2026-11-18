@@ -3,7 +3,7 @@
 
 export const contact = {
     email: 'kwami.akudominguez@gmail.com',
-    linkedin: 'https://www.linkedin.com/in/kwamiad',
+    linkedin: 'https://www.linkedin.com/in/kwami-aku-dominguez-7018a028b/',
     github: 'https://github.com/kwamcelo',
     // TODO: export your current resume (fix the "silica surfaced" typo first) to
     // portfolio_react/public/resume.pdf, then set this to '/resume.pdf'.
