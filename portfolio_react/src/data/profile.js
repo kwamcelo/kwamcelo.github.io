@@ -34,7 +34,8 @@ export const skills = [
         label: 'Frameworks & Tools',
         items: [
             'React', 'Next.js', 'Node.js', 'FastAPI', 'Flask', 'SQLAlchemy', 'Three.js', 'Vite',
-            'AWS (Lambda, S3)', 'Supabase', 'Git / GitHub', 'GitHub Actions', 'Pandas',
+            'AWS (Lambda, S3)', 'Supabase', 'Git / GitHub', 'GitHub Actions', 'Pandas', 'scikit-learn',
+            'Codex', 'Claude Code',
         ],
     },
     {
@@ -86,9 +87,8 @@ export const projects = [
         title: 'Pointer Realms (DubHacks 2025)',
         tech: ['React', 'TypeScript', 'Three.js', 'AWS Lambda', 'Node.js'],
         summary: [
-            'Designed a 3D game that maps C memory constructs (pointers, allocations, and types such as int/char/short) to interactive game-board entities using Three.js.',
-            'Built a rule-based parser and validator that converts submitted C code into game actions and memory views.',
-            'Deployed the code simulator and level generator as AWS Lambda functions, with an API layer for the React frontend.',
+            'Designed a 3D game concept mapping C memory constructs (pointers, allocations, distinct types such as int/char/short) to interactive game-board entities using Three.js.',
+            'Developed backend parsing logic to transform user-submitted C code into structured memory-state visualizations.',
         ],
         links: {
             code: 'https://github.com/Oldhoon/dubhacks2025', // TODO: team GitHub repo URL
@@ -101,12 +101,12 @@ export const projects = [
         ],
     },
     {
-        title: 'Insight UBC',
-        tech: ['TypeScript', 'Node.js', 'Express', 'REST APIs', 'Chart.js', 'Mocha', 'Chai'],
+        title: 'InsightUBC (CPSC 310)',
+        tech: ['TypeScript', 'Node.js', 'REST APIs', 'Mocha', 'Chai'],
         summary: [
-            'Built a full-stack query system that lets UBC instructors upload academic and campus datasets and analyze them through chart visualizations and sortable tables.',
-            'Designed REST APIs for dataset uploads, async processing, CRUD operations, and custom query execution.',
-            'Developed automated test suites covering asynchronous workflows, regressions, and API correctness in a Git-based team workflow with code reviews.',
+            'Built a full-stack query system that lets UBC instructors upload course and campus datasets, analyze the data with chart visualizations, and display specific course/building data in tables.',
+            'Developed automated test suites covering asynchronous workflows, regressions, and API correctness.',
+            'Collaborated in a Git-based team environment using code reviews, debugging, and iterative refactoring.',
         ],
         // Course project (CPSC 310): code is not public.
         links: {},
@@ -158,7 +158,8 @@ export const experience = [
         org: 'Apple',
         dates: 'July 2026 – Present',
         summary: [
-            'Deliver personalized experiences to make sure customers’ needs are met, recommending Apple products and accessories based on their specific use cases.',
+            'Achieved a personal customer satisfaction rating of 98/100 by connecting with customers to understand their needs and recommend Apple products that add value to their lives.',
+            'Assisted customers with setting up new devices and transferring data, explaining technical concepts around product hardware and AI performance/security to match their level of knowledge.',
         ],
     },
     {
@@ -166,8 +167,8 @@ export const experience = [
         org: 'Tutor Teach',
         dates: 'Aug 2020 – Present',
         summary: [
-            'Delivered 300+ one-on-one sessions in chemistry and math for students from grade 1 to university level.',
-            'Developed individualized learning plans and adapted teaching strategies to work with students with disabilities.',
+            'Delivered 300+ tutoring sessions in chemistry and math, improving student performance by at least a letter grade over the course of a semester.',
+            'Personalized each session based on the rapport built with the student, applying different teaching strategies based on their extracurricular interests and general strengths and weaknesses.',
         ],
     },
     {
@@ -183,8 +184,7 @@ export const experience = [
         org: 'University of Alberta',
         dates: 'May 2018 – Jun 2021',
         summary: [
-            'Led seminars, labs, and office hours for organic chemistry undergraduates; graded coursework and assessments.',
-            'Conducted inorganic and computational chemistry research (see the Research page).',
+            'Performed computational chemistry research (see the Research page); led seminars, labs, and office hours for organic chemistry undergraduates; graded coursework and assessments.',
         ],
     },
     {
