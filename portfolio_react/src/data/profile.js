@@ -76,11 +76,10 @@ export const projects = [
             code: 'https://github.com/kwamcelo/b.shell',
             live: 'https://bshell.netlify.app',
         },
-        // TODO: these screenshots are from the BCS Hacks version; retake them if the UI has changed.
         images: [
-            '/images/b.shell/home_page.PNG',
-            '/images/b.shell/game_play.PNG',
-            '/images/b.shell/results.PNG',
+            '/images/b.shell/home.jpg',
+            '/images/b.shell/practice.jpg',
+            '/images/b.shell/results.jpg',
         ],
     },
     {
