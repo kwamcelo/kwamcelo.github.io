@@ -192,7 +192,7 @@ export const experience = [
         org: 'Edmonton Scottish United Soccer Club',
         dates: 'Jul 2023 – Aug 2024',
         summary: [
-            'Coached a youth team to a provincial championship in their age group.',
+            'Coached the 2011 boys team to the U13 Tier 1 provincial championship.',
             'Mentored youth on teamwork, communication, and leadership in a positive, engaging environment that encouraged participation and growth.',
         ],
     },
